@@ -1,5 +1,9 @@
 sudo: false
 language: go
+os: 
+- linux-ppc64le
+- linux
+
 install:
 - go get -t -v . ./regressiontests
 - gometalinter --install
